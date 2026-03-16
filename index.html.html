@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nawaar Dança Oriental</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#fff7f7,#fdecec);
+}
+
+/* MENU */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#b71c1c;
+display:flex;
+justify-content:center;
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:30px;
+padding:15px;
+margin:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+position:relative;
+}
+
+nav a::after{
+content:'';
+width:0%;
+height:2px;
+background:gold;
+position:absolute;
+left:0;
+bottom:-5px;
+transition:0.3s;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+/* HEADER */
+
+header{
+padding:120px 20px 80px 20px;
+text-align:center;
+background:linear-gradient(135deg,#b71c1c,#e53935);
+color:white;
+}
+
+header h1{
+font-size:48px;
+margin:0;
+}
+
+header p{
+font-size:18px;
+}
+
+/* CONTAINER */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+h2{
+text-align:center;
+color:#b71c1c;
+margin-bottom:30px;
+}
+
+/* PLANOS */
+
+.planos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:14px;
+box-shadow:0 10px 30px rgba(0,0,0,0.12);
+text-align:center;
+transition:0.3s;
+border-top:4px solid gold;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+/* HORÁRIOS */
+
+.horarios{
+background:white;
+padding:30px;
+border-radius:14px;
+box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* MAPA */
+
+.mapa{
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* BOTÃO */
+
+.whatsapp{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:16px 32px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+margin-top:20px;
+transition:0.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.05);
+background:#1ebc57;
+}
+
+/* IA */
+
+.ia{
+background:white;
+padding:40px;
+border-radius:14px;
+box-shadow:0 10px 30px rgba(0,0,0,0.12);
+text-align:center;
+border-top:4px solid gold;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:50px;
+background:#b71c1c;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<ul>
+
+<li><a href="#inicio">Início</a></li>
+<li><a href="#planos">Planos</a></li>
+<li><a href="#horarios">Horários</a></li>
+<li><a href="#local">Localização</a></li>
+<li><a href="#ia">Assistente</a></li>
+<li><a href="#contato">Contato</a></li>
+
+</ul>
+
+</nav>
+
+<header id="inicio">
+
+<h1>Nawaar</h1>
+
+<p>Dança Oriental</p>
+
+<p>Professora Joelma • Natal RN</p>
+
+</header>
+
+<div class="container">
+
+<h2>Sobre a Escola</h2>
+
+<p style="text-align:center;max-width:700px;margin:auto;">
+A Nawaar é uma escola dedicada à arte da dança oriental em Natal.
+As aulas são conduzidas pela professora Joelma e são abertas
+para iniciantes e alunas que desejam evoluir na dança com técnica,
+expressividade e musicalidade.
+</p>
+
+</div>
+
+<div class="container" id="planos">
+
+<h2>Planos de Pagamento 2026</h2>
+
+<div class="planos">
+
+<div class="card">
+<h3>1 Turma</h3>
+<p>Mensal: R$100</p>
+<p>Trimestral: R$275</p>
+</div>
+
+<div class="card">
+<h3>2 Turmas</h3>
+<p>Mensal: R$170</p>
+<p>Trimestral: R$470</p>
+</div>
+
+<div class="card">
+<h3>3 Turmas</h3>
+<p>Mensal: R$230</p>
+<p>Trimestral: R$650</p>
+</div>
+
+</div>
+
+<p style="text-align:center;margin-top:20px;">
+<b>Taxa de matrícula: R$50</b>
+</p>
+
+</div>
+
+<div class="container" id="horarios">
+
+<h2>Horários das Aulas</h2>
+
+<div class="horarios">
+
+<ul>
+<li>Segunda – 17h30 (Iniciante)</li>
+<li>Terça – 9h (Intermediária)</li>
+<li>Terça – 17h30 (Iniciante)</li>
+<li>Terça – 19h (Iniciante)</li>
+<li>Quinta – 17h30 (Básico)</li>
+<li>Quinta – 19h (Básico)</li>
+<li>Sexta – 15h30 (Iniciante)</li>
+<li>Sexta – 18h (Intermediária)</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="container" id="local">
+
+<h2>Localização</h2>
+
+<div class="mapa">
+
+<iframe
+src="https://www.google.com/maps?q=Espaço+Nawaar+Natal&output=embed"
+width="100%"
+height="350"
+style="border:0;">
+</iframe>
+
+</div>
+
+</div>
+
+<div class="container" id="ia">
+
+<h2>Assistente Virtual</h2>
+
+<div class="ia">
+
+<p style="font-size:18px;">
+Conheça nossa assistente virtual do WhatsApp 💃
+</p>
+
+<p>
+A <b>Nawaara</b> pode ajudar você com informações sobre
+horários, planos e matrículas na escola Nawaar.
+</p>
+
+<a class="whatsapp" href="https://wa.me/558496412673">
+Conversar com a Nawaara
+</a>
+
+</div>
+
+</div>
+
+<div class="container" id="contato" style="text-align:center;">
+
+<h2>Contato</h2>
+
+<p>Entre em contato diretamente pelo WhatsApp:</p>
+
+<a class="whatsapp" href="https://wa.me/5584988406240">
+Falar com a Escola
+</a>
+
+</div>
+
+<footer>
+
+© 2026 Nawaar Dança Oriental
+
+</footer>
+
+</body>
+</html>
